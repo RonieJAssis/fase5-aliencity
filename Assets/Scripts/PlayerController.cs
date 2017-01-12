@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using CnControls;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour {
@@ -23,8 +24,8 @@ public class PlayerController : MonoBehaviour {
 
 	void Update()
 	{
-		Vector3 move = Input.GetAxis ("Vertical") * transform.TransformDirection (Vector3.forward) * MoveSpeed;
-		transform.Rotate (new Vector3 (0, Input.GetAxis ("Horizontal") * RotationSpeed * Time.deltaTime, 0));
+		Vector3 move = CnInputManager.GetAxis ("Vertical") * transform.TransformDirection (Vector3.forward) * MoveSpeed;
+		transform.Rotate (new Vector3 (0, CnInputManager.GetAxis ("Horizontal") * RotationSpeed * Time.deltaTime, 0));
 		
 		if (!cc.isGrounded) {
 			gravidade += Physics.gravity * Time.deltaTime;
@@ -42,25 +43,25 @@ public class PlayerController : MonoBehaviour {
 		cc.Move (move* Time.deltaTime);
 		Anima ();
 	}
-	 
-	void Anima()
-	{
-		if (!Input.anyKey)
-		{
-			anim.SetTrigger("Parado");
-		} 
-		else 
-		{
-			if(Input.GetKeyDown("space"))
-			{
-				anim.SetTrigger("Pula");
-				jump = true;
-			}
-			else
-			{
-				anim.SetTrigger("Corre");
-			}
-		}
-	}
-   
+
+    void Anima()
+    {
+        if (!Input.anyKey)
+        {
+            anim.SetTrigger("Parado");
+        }
+        else
+        {
+            if (CnInputManager.GetButtonDown("Jump"))
+            {
+                anim.SetTrigger("Pula");
+                jump = true;
+            }
+            else
+            {
+                anim.SetTrigger("Corre");
+            }
+        }
+    }
+
 }

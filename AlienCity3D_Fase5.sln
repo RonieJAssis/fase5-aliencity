@@ -5,6 +5,8 @@ Project("{467C6868-FEDD-7DA7-B9EA-5D9F6FD8CE2A}") = "AlienCity3D_Fase5", "Assemb
 EndProject
 Project("{467C6868-FEDD-7DA7-B9EA-5D9F6FD8CE2A}") = "AlienCity3D_Fase5", "Assembly-CSharp.csproj", "{1899945B-FCC5-D354-5AF9-1AB8ABA77DD9}"
 EndProject
+Project("{467C6868-FEDD-7DA7-B9EA-5D9F6FD8CE2A}") = "AlienCity3D_Fase5", "Assembly-CSharp-Editor-firstpass.csproj", "{B7359931-4E82-2C48-5E4C-A0E206563867}"
+EndProject
 Project("{467C6868-FEDD-7DA7-B9EA-5D9F6FD8CE2A}") = "AlienCity3D_Fase5", "Assembly-CSharp-Editor.csproj", "{FA7E6310-83A6-EC8D-CC4D-B4415AECEC5B}"
 EndProject
 Global
@@ -21,6 +23,10 @@ Global
 		{1899945B-FCC5-D354-5AF9-1AB8ABA77DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1899945B-FCC5-D354-5AF9-1AB8ABA77DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1899945B-FCC5-D354-5AF9-1AB8ABA77DD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7359931-4E82-2C48-5E4C-A0E206563867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7359931-4E82-2C48-5E4C-A0E206563867}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7359931-4E82-2C48-5E4C-A0E206563867}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7359931-4E82-2C48-5E4C-A0E206563867}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FA7E6310-83A6-EC8D-CC4D-B4415AECEC5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FA7E6310-83A6-EC8D-CC4D-B4415AECEC5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA7E6310-83A6-EC8D-CC4D-B4415AECEC5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
