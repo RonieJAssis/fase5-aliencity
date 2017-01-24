@@ -5,7 +5,7 @@ public class Cairespinhos1 : MonoBehaviour
 {
 
     private Rigidbody rb;
-
+    Vector3 v3;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -26,9 +26,12 @@ public class Cairespinhos1 : MonoBehaviour
         {
             {
                 rb.useGravity = true;
-           
+                v3 = rb.velocity;
+                v3.y = -15.0f;
+                rb.velocity = v3;
 
-        }
+
+            }
         }
     }
 }
