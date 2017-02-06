@@ -10,7 +10,7 @@ public class Morte : MonoBehaviour
     public GameObject player;
     private bool Reiniciar = false;
     public Slider vidabarra;
-
+    public long vibra;
 
 
 
@@ -21,6 +21,7 @@ public class Morte : MonoBehaviour
         Tela2.SetActive(false);
         Reiniciar = false;
         player.SetActive(true);
+        
         
         
 
@@ -61,19 +62,23 @@ public class Morte : MonoBehaviour
         if (other.gameObject.CompareTag("Morte"))
         {
             Vida -= 50;
+            Vibration.Vibrate(vibra);
             
         }
         if (other.gameObject.CompareTag("Morte2"))
         {
             Vida -= 25;
-           
-            
+            Vibration.Vibrate(vibra);
+
+
+
 
         }
         if (other.gameObject.CompareTag("Morte3"))
         {
             Vida -= 100;
-            
+            Vibration.Vibrate(vibra);
+
 
 
         }
